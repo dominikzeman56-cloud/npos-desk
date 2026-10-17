@@ -1,0 +1,49 @@
+[
+  {
+    "npos_id": "audio-dont-play",
+    "bass_type": null,
+    "confidence": null,
+    "why": "Modulace ze stemů je rytmus not (0,72 a 2,15 Hz), ne 1/16 LFO. Kostra ve vaultu pořád popisuje AM 11,5 Hz. Kánon ten údaj označil za artefakt plného mixu. Typ by byl štítek receptu, ne měření.",
+    "sources": [
+      "npos-v2 data/tracks/audio-dont-play/analysis.json",
+      "Hudební produkce/60 Rozbory/Tracky/Dont_Play_Skeleton_GsharpMinor.md",
+      "Hudební produkce/40 Mix a master.md řádek 16"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "npos_id": "prolix-been-about-this",
+    "bass_type": null,
+    "confidence": null,
+    "why": "Rozbor ve vaultu střední vrstvu pojmenovává reese a zároveň uvádí AM 1/8 a 1/16 z plného mixu. V korpusu je modulace hypothesis, source unknown. Jméno vrstvy v receptu není bass_type.",
+    "sources": [
+      "npos-v2 data/corpus/tracks.jsonl",
+      "Hudební produkce/60 Rozbory/Tracky/Prolix_Been_About_This.md"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "npos_id": "sinister-souls-raido-restless",
+    "bass_type": null,
+    "confidence": null,
+    "why": "Rekonstrukce říká LFO growl sync 1/4 a sama sebe označuje mix-only. V korpusu je modulace hypothesis. Pyin z plného mixu kánon bere jako kvantizovaný model.",
+    "sources": [
+      "npos-v2 data/corpus/tracks.jsonl",
+      "Hudební produkce/60 Rozbory/Tracky/Sinister_Souls_RAIDO_Restless.md",
+      "Hudební produkce/10 Principy.md"
+    ],
+    "checked": "2026-10-17"
+  },
+  {
+    "npos_id": "balron-audio-breach",
+    "bass_type": null,
+    "confidence": null,
+    "why": "V 60 Rozbory/Tracky není samostatný rozbor Breach. Kánon z něj bere kick-over-sub a obálky 2,90/1,45/0,72 Hz jako sidechain kicku, ne typ basy. V korpusu je modulace hypothesis.",
+    "sources": [
+      "npos-v2 data/corpus/tracks.jsonl",
+      "Hudební produkce/10 Principy.md",
+      "Hudební produkce/21 Bicí.md"
+    ],
+    "checked": "2026-10-17"
+  }
+]
