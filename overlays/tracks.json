@@ -3,7 +3,7 @@
     "npos_id": "audio-dont-play",
     "bass_type": null,
     "confidence": null,
-    "why": "Modulace ze stemů je rytmus not (0,72 a 2,15 Hz), ne 1/16 LFO. Kostra ve vaultu pořád popisuje AM 11,5 Hz. Kánon ten údaj označil za artefakt plného mixu. Typ by byl štítek receptu, ne měření.",
+    "why": "C8 2026-10-17 (experiments/c8.md): izolovaný mid bass, obálka 2,86 Hz = čtvrťová, žádná šestnáctina. pYIN MIDI téhož stemu má medián osminu. Sub: obálka 0,73 Hz, přepis šestnáctiny. Starší 2,15 Hz se neopakovalo. Typ by byl štítek receptu, ne měření.",
     "sources": [
       "npos-v2 data/tracks/audio-dont-play/analysis.json",
       "Hudební produkce/60 Rozbory/Tracky/Dont_Play_Skeleton_GsharpMinor.md",

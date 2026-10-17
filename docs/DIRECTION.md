@@ -19,6 +19,10 @@ npos-v2 je archiv a měřicí stroj. Rozhodnutí vznikají tady. Cesta ke čten�
 
 Čtyři tracky v korpusu npos mají `bass_type` prázdný. Overlay v tomhle repu to nechává prázdné a říká proč: [`overlays/tracks.json`](../overlays/tracks.json). Vaultové rekonstrukce *Don't Play*, *Been About This* a *Restless* pořád popisují LFO/AM z plného mixu. Kánon (`40 Mix a master`, řádek 16) tu 1/16 modulaci označil za artefakt. Doplnit z toho `growl` nebo `reese` by bylo opačné, než k čemu měření došlo.
 
+## C8 (2026-10-17)
+
+Tabulka: [`experiments/c8.md`](../experiments/c8.md). Nepovyšovat. Izolovaný mid bass Don't Play má obálku na čtvrťové (2,86 Hz), pYIN MIDI téhož stemu medián na osmině. Sub má obálku jednou za takt a přepis na šestnáctinách. Ekwols Vigil na disku není.
+
 ## Další práce
 
-Jeden experiment C8, výstup tabulka v tomhle repu: klip, mřížka, Hz obálky, `basis`, `confidence`. Nejdřív vedle sebe výstupy `tools/midi_project.py` a `tools/analyze_track.py`. Nový kód až když to nestačí. A/B na C10 je poslech v Serumu, ne commit do npos.
+A/B na C10 je poslech v Serumu, ne commit do npos. Porovnání MIDI basy a audio chopu po taktech v jednom resamplovaném projektu je jiný experiment (session 2026-10-17), ne opakování C8.

@@ -1,0 +1,67 @@
+{
+  "id": "c8-note-rhythm-vs-lfo",
+  "date": "2026-10-17",
+  "claim": "Rytmus not je často zdroj growlu, ne LFO.",
+  "verdict": "Nepovyšovat. U Don't Play izolovaná obálka nemá šestnáctinovou špičku. Zároveň nesedí na medián nástupů v pYIN MIDI téhož stemu. Ekwols se znovu neměřil, audio Vigil na disku není.",
+  "bpm": 172,
+  "grid_hz": {"bar": 0.717, "1/4": 2.867, "1/8": 5.733, "1/16": 11.467},
+  "tools": {
+    "envelope": "npos-v2/tools/analyze_track.py --mode quick. Skript do JSON píše basis full_mix a confidence hypothesis vždy. Tady je vstup izolovaný stem, proto basis stems a Hz je measured. Okno je nejdelší hlasitý úsek detektoru.",
+    "midi": "npos-v2/tools/midi_stats.py read_smf. midi_project.py nešel spustit, .als ke kostře neexistuje.",
+    "wrote_npos": false
+  },
+  "rows": [
+    {
+      "clip": "mid bass no sc",
+      "window_s": [45.53, 108.02],
+      "envelope_hz": 2.86,
+      "envelope_grid": "1/4",
+      "secondary_hz": [1.07],
+      "midi_file": "02_TX_MID_BASS.mid",
+      "midi_median_gap_beats": 0.5,
+      "midi_onset_hz": 5.73,
+      "midi_onset_grid": "1/8",
+      "crest_db": 13.05,
+      "basis": "stems",
+      "confidence": "measured",
+      "note": "Hz obálky measured. Věta 'obálka = nástupy not' neplatí: osmina v MIDI, čtvrťová v obálce. 11.5 Hz ve špičkách nad 50 % primáru není."
+    },
+    {
+      "clip": "sub no sc",
+      "window_s": [45.44, 108.08],
+      "envelope_hz": 0.73,
+      "envelope_grid": "1 bar",
+      "secondary_hz": [0.56, 0.62, 0.65, 0.7, 0.99],
+      "midi_file": "01_TX_SUB.mid",
+      "midi_median_gap_beats": 0.25,
+      "midi_onset_hz": 11.47,
+      "midi_onset_grid": "1/16",
+      "crest_db": 4.53,
+      "basis": "stems",
+      "confidence": "measured",
+      "note": "Pásmo nástroje je 60–300 Hz, sub má energii pod 62 Hz, takže obálka je únik nad subem. Crest 4.5 dB = skoro bez děr. pYIN nařezal glide na šestnáctiny. Nástroj sám 0.73 Hz značí off_grid, protože nemá štítek pro takt. 0.73 / 0.717 = 1.02."
+    },
+    {
+      "clip": "reece edits",
+      "window_s": null,
+      "envelope_hz": 7.07,
+      "envelope_grid": "off_grid",
+      "secondary_hz": [6.06],
+      "midi_file": "03_TX_REECE_EDITS.mid",
+      "midi_median_gap_beats": 0.5,
+      "midi_onset_hz": 5.73,
+      "midi_onset_grid": "1/8",
+      "crest_db": 9.33,
+      "basis": "stems",
+      "confidence": "estimated",
+      "note": "Detektor sekcí rozsekal stem na minutové ticho a vteřinové zásahy. Nejdelší hlasitý úsek není ověřený drop. Do verdiktu nepočítáno."
+    }
+  ],
+  "not_measured": [
+    {
+      "clip": "Ekwols — The Vigil Abyss",
+      "why": "Soubor na disku není. Vaultový údaj 2.9 Hz při 174 BPM zůstává starý rozbor, ne todle měření."
+    }
+  ],
+  "prior_claim_2_15_hz": "Vault 2026-10-14 uvádí obálku 0.72 a 2.15 Hz. Tenhle běh na mid bass našel primár 2.86 Hz a sekundár 1.07 Hz. 2.15 Hz se neopakoval."
+}
