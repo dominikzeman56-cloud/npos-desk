@@ -57,11 +57,7 @@
       "note": "Detektor sekcí rozsekal stem na minutové ticho a vteřinové zásahy. Nejdelší hlasitý úsek není ověřený drop. Do verdiktu nepočítáno."
     }
   ],
-  "not_measured": [
-    {
-      "clip": "Ekwols — The Vigil Abyss",
-      "why": "Soubor na disku není. Vaultový údaj 2.9 Hz při 174 BPM zůstává starý rozbor, ne todle měření."
-    }
-  ],
+  "not_measured": [],
+  "vigil_followup": "experiments/vigil-skeleton.md",
   "prior_claim_2_15_hz": "Vault 2026-10-14 uvádí obálku 0.72 a 2.15 Hz. Tenhle běh na mid bass našel primár 2.86 Hz a sekundár 1.07 Hz. 2.15 Hz se neopakoval."
 }

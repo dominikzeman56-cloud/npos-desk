@@ -21,7 +21,7 @@ npos-v2 je archiv a měřicí stroj. Rozhodnutí vznikají tady. Cesta ke čten�
 
 ## C8 (2026-10-17)
 
-Tabulka: [`experiments/c8.md`](../experiments/c8.md). Nepovyšovat. Izolovaný mid bass Don't Play má obálku na čtvrťové (2,86 Hz), pYIN MIDI téhož stemu medián na osmině. Sub má obálku jednou za takt a přepis na šestnáctinách. Ekwols Vigil na disku není.
+Tabulka: [`experiments/c8.md`](../experiments/c8.md). Nepovyšovat. Vigil z RipX stemů: [`experiments/vigil-skeleton.md`](../experiments/vigil-skeleton.md). Osmina kostry B sedí na 133–154 s. Čtvrťová věta z vaultu mířila na 216–224 s, a tam v basu není.
 
 ## Další práce
 

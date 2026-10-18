@@ -1,0 +1,57 @@
+{
+  "id": "vigil-skeleton-ripx",
+  "date": "2026-10-17",
+  "source_audio": "RipX stems Bass, Drums, Other. Full file 339.3 s.",
+  "bpm_grid": "Kostra je v 172, protože Dirts remix je 172. Špičky 2,90 / 5,80 / 11,60 Hz sedí na 174 přesněji. Rozdíl je asi 1 %. MIDI se nepřepisovalo.",
+  "tool": "analyze_track.bass_modulation, pásmo 60–300 Hz. Nástroj vrací jen špičky nad 50 % primáru a u 67–108 s se vítěz otočí po ořezu 10 ms. Tady jsou poměry k nejsilnější špičce.",
+  "wrote_npos": false,
+  "windows": [
+    {
+      "t": [67.09, 108.21],
+      "what": "nejdelší hlasitý úsek basu",
+      "bass_peaks": {"0.73": 1.0, "2.89": 0.99, "1.09": 0.91, "5.79": 0.76, "11.60": 0.73},
+      "confidence": "measured",
+      "note": "Takt, čtvrť, osmina i šestnáctina jsou všechny silné. Jedna mřížka ten drop nevlastní."
+    },
+    {
+      "t": [133.4, 153.9],
+      "what": "úsek, na který kostra B míří kolem 132 s",
+      "bass_peaks": {"5.80": 1.0, "11.61": 0.65, "3.61": 0.63, "2.88": 0.51},
+      "confidence": "measured",
+      "note": "Osmina je primár. Sedí na 23_B_ROLLING a 24_B_HARMONICS (medián mezery 0,5 doby, 5,73 Hz)."
+    },
+    {
+      "t": [177.54, 209.05],
+      "what": "starý klip 177–209, teď z celého stemu",
+      "bass_peaks": {"0.70": 1.0, "1.43": 0.58, "2.19": 0.55},
+      "centroid_hz": 356.7,
+      "confidence": "measured",
+      "note": "Starý klip měl primár 0,7 Hz. Nový stem to opakuje. Čtvrťová 2,9 Hz tu není."
+    },
+    {
+      "t": [216, 224],
+      "what": "okno z vaultu, ve kterém měla být obálka 2,9 Hz",
+      "bass_peaks": {"0.50": 1.0, "1.50": 0.55, "2.00": 0.32},
+      "drums_hz": 11.62,
+      "drums_grid": "1/16",
+      "confidence": "estimated",
+      "note": "8 s je krátké na sub-Hz. 2,9 Hz v basu není. 11,6 Hz je ve Drums. Starý full mix 11,67 Hz byl bicí, ne basa. Detektor sekcí má 209–228 jako breakdown."
+    },
+    {
+      "t": [23.08, 51.47],
+      "what": "první hlasitý úsek",
+      "bass_peaks": {"1.44": 1.0, "0.53": 0.94, "0.70": 0.76},
+      "confidence": "measured",
+      "note": "Půlová a pomalejší. Není to čtvrťová z reese fráze."
+    }
+  ],
+  "skeleton_midi_onset_hz": {
+    "20_A_SUB": 0.72,
+    "21_A_REESE": 2.87,
+    "22_A_HARMONICS": 1.43,
+    "23_B_ROLLING": 5.73,
+    "24_B_HARMONICS": 5.73
+  },
+  "reese_spacing": "V okně 216–224 má bas 88 špiček v 350–900 Hz, medián rozestup 2,7 Hz. Stem je celá basa, ne jedna držená nota. Štítek reese je estimated.",
+  "verdict": "Kostra B (osminy) sedí na obálce 133–154 s. Kostra A (takt + čtvrť) je v dropu 67–108 s jen jako jedna ze čtyř srovnatelně silných mřížek. Věta z vaultu '2,9 Hz v 216–224 s' na tomhle stemu neplatí. bass_type se nevyplňuje. C8 se nepovyšuje jako obecné pravidlo."
+}
